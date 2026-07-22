@@ -1,0 +1,42 @@
+#:kivy 2.3.0
+
+<StatCard>:
+    orientation: "vertical"
+    radius: [14]
+    elevation: 1
+    padding: dp(14), dp(10)
+    md_bg_color: app.theme_cls.bg_light if not root.highlight else app.theme_cls.primary_dark
+    size_hint_y: None
+    height: dp(72)
+
+<SectionHeader>:
+    size_hint_y: None
+    height: dp(34)
+    bold: True
+    font_style: "Subtitle1"
+    theme_text_color: "Primary"
+    padding: dp(4), dp(4)
+
+<SettingRow>:
+    orientation: "vertical"
+    radius: [12]
+    elevation: 0
+    padding: dp(14), dp(10)
+    spacing: dp(4)
+    size_hint_y: None
+    md_bg_color: app.theme_cls.bg_light
+
+<HintLabel>:
+    font_style: "Caption"
+    theme_text_color: "Hint"
+    size_hint_y: None
+    text_size: self.width, None
+    height: self.texture_size[1]
+
+<StockRow>:
+    radius: [12]
+    elevation: 1
+    padding: dp(14), dp(8)
+    spacing: dp(2)
+    size_hint_y: None
+    height: dp(80)
